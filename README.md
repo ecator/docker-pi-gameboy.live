@@ -1,16 +1,18 @@
-# docker-gameboy.live
-gameboy.live docker package
+# docker-pi-gameboy.live
+[gameboy.live](https://github.com/HFO4/gameboy.live) docker package for pi
 
-[![Docker Automated build](https://img.shields.io/docker/automated/shokinn/docker-gameboy.live.svg)](https://hub.docker.com/r/shokinn/docker-gameboy.live/)
-[![Docker image version](https://images.microbadger.com/badges/version/shokinn/docker-gameboy.live.svg)](https://microbadger.com/images/shokinn/docker-gameboy.live)
-[![Docker image size](https://images.microbadger.com/badges/image/shokinn/docker-gameboy.live.svg)](https://microbadger.com/images/shokinn/docker-gameboy.live)
+# Build example
 
-## Run example
+```bash
+docker build -t ecat/docker-pi-gameboy.live:latest  .
+```
+
+# Run example
 
 ```bash
 docker run \
 	--name gbdotlive
 	-v /docker/gbdotlive_data:/data \
 	-p 1989:1989 \
-	shokinn/docker-gameboy.live
+	ecat/docker-pi-gameboy.live
 ```
